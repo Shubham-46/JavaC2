@@ -1,0 +1,90 @@
+Has A relationship 
+=> In java Has-A relationship simple means that an instance of 
+has a reference to a instance of another class or other instance of
+the same class.
+Eg:A car has an engine and a dog has a tail
+
+public class Bike{
+	private String color;
+	private int maxSpeed;
+	
+	public void bikeInfo(){
+		System.out.println("bike color" +color+"Bike speed "+maxSpeed);
+	}
+	
+	public void setColor(String color){
+		this.color=color;
+	}
+	public void setmaxSpeed(int maxSpeed){
+		this.maxSpeed=maxSpeed
+	
+	}
+
+}
+class roadbike extends Bike{
+	public void start(){
+		System.out.println("Engine is started")
+	}
+	public void stop(){
+		System.out.println("Engine is stop")
+	}	
+
+}
+class Main{
+	public static void main(String[] args){
+		sportbike s=new sportbike()
+		s.setColor("black")
+		s.setmaxSpeed(180)
+		s.start();
+		s.stop();
+	
+	}
+}
+
+
+
+Is-A relationship
+=>In object oriented programming,the concept of Is-A is totally based 
+on inheritance which can be of two types class inheritance or interface
+inheritance
+Eg: Apple is fruit
+public class Bike{
+	private String color;
+	private int maxSpeed;
+	
+	public void bikeInfo(){
+		System.out.println("bike color" +color+"Bike speed "+maxSpeed);
+	}
+	
+	public void setColor(String color){
+		this.color=color;
+	}
+	public void setmaxSpeed(int maxSpeed){
+		this.maxSpeed=maxSpeed
+	
+	}
+
+}
+
+class roadbike extends Bike{
+	public static void main(String[] args){
+		Bike b=new sportbike()
+		b.setColor("black")
+		b.setmaxSpeed(180)
+		System.out.println(b.getColor());
+		System.out.println(b.getmaxSpeed());
+	
+	}
+}
+
+
+
+Explain about access modifiers and their accessibility?
+=>The access modifier in java shows the accessibility or scope of the field
+method,constructors and class.We can change the access of level,field,constructor by
+applying the access modifiers on it.
+there are four types of access of modifiers
+1 public
+2 protected 
+3 private
+4 default
